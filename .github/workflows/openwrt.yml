@@ -38,6 +38,7 @@ jobs:
       - name: Download lede
         run: |
           git clone https://github.com/66o99/lede
+          rm -rf ./.config
           cp .config ./lede/.config
           mv ./lede/* ./
       - name: Install OpenClash
@@ -60,8 +61,6 @@ jobs:
       - name: Costom configure file
         run: |
         
-          rm -rf ./.config
-          
           make defconfig
       - name: Download package source code
         run: |
