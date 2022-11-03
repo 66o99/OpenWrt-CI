@@ -38,7 +38,7 @@ jobs:
       - name: Download lede
         run: |
           git clone https://github.com/66o99/lede
-          rm -rf ./.config
+          rm -rf ./lede/.config
           cp .config ./lede/.config
           mv ./lede/* ./
       - name: Install OpenClash
