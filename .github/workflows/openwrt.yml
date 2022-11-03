@@ -59,6 +59,9 @@ jobs:
           ./scripts/feeds install -a
       - name: Costom configure file
         run: |
+        
+          rm -rf ./.config
+          
           make defconfig
       - name: Download package source code
         run: |
