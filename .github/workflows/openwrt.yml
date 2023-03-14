@@ -39,8 +39,8 @@ jobs:
         run: |
           git clone https://github.com/66o99/openwrt-22.03.2
 
-          cp .config ./lede/.config
-          mv ./lede/* ./
+          cp .config ./openwrt-22.03.2/.config
+          mv ./openwrt-22.03.2/* ./
 
       - name: Update feeds
         run: |
