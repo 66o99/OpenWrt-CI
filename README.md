@@ -1,6 +1,5 @@
 # OpenWrt云编译
 
-#### 每天凌晨2点自动编译
 ### 把本仓库克隆到自己的仓库里
 #### 打开下面链接生成.config配置文件
 #### [https://hackyes.github.io/openwrt-menuconfig/index.html](https://hackyes.github.io/openwrt-menuconfig/index.html)
